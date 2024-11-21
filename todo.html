@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <style>
+        /* ==========================  font link  ========================== */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+        /* ========================  common css part start  ====================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+    background: url(./images/todo_bg5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------  common css part end  ------------------------ */
+/* ========================  todo list css part start  =================== */
+.main_todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: transparent;
+    border: 2px inset pink;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.main_todo h1{
+    font-family: "Oxanium", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: pink;
+}
+.main_todo .todo_head {
+    border: 2px dotted pink;
+    border-radius: 20px;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+}
+.main_todo .todo_head input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 430px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Oxanium", sans-serif;
+    color: white;
+}
+::placeholder{
+    font-family: "Playwrite GB S", cursive;
+    opacity: 50%;
+    color: #000;
+}
+.main_todo .todo_head button {
+    background-color: #FFEB55;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Playwrite GB S", cursive;
+    color: #000;
+    width: 70px;
+}
+.main_todo .todo_head button:active{
+    opacity: .8;
+}
+.error{
+    color: red;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.single_todo {
+    padding: 10px 20px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single_todo input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    color: #fff;
+    background-color: transparent;
+    width: 300px;
+}
+.single_todo button {
+    padding: 5px 8px;
+    color: black;
+    font-size: 15px;
+    background-color: #08C2FF;
+    border: none;
+    border-radius: 10px;
+}
+.single_todo .delete {
+    background-color: red;
+    color: #fff;
+    margin-left: 5px;
+}
+
+/* ------------------------  todo list css part end  --------------------- */
+/* ========================  xsm device responsive  ====================== */
+@media (max-width: 575.98px) {
+.main_todo{
+    padding: 10px 30px;
+}    
+.main_todo h1 {
+	font-size: 22px;
+}
+.main_todo .todo_head {
+	width: 260px;
+	height: 35px;
+}
+.main_todo .todo_head input {
+	width: 210px;
+	font-size: 15px;
+}
+.main_todo .todo_head button {
+	font-size: 15px;
+	width: 50px;
+}
+.single_todo input {
+	font-size: 16px;
+	width: 155px;
+}
+.single_todo button {
+	padding: 4px 7px;
+	font-size: 15px;
+}
+}
+
+/* ========================  sm device responsive  ====================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main_todo {
+	padding: 10px 45px;
+}  
+.main_todo h1 {
+	font-size: 22px;
+}
+.main_todo .todo_head {
+	width: 260px;
+	height: 35px;
+}
+.main_todo .todo_head input {
+	width: 210px;
+	font-size: 15px;
+}
+.main_todo .todo_head button {
+	font-size: 15px;
+	width: 50px;
+}
+.single_todo input {
+	font-size: 16px;
+	width: 155px;
+}
+.single_todo button {
+	padding: 4px 7px;
+	font-size: 15px;
+}
+}
+                    /* ====  md device responsive  ==== */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+.main_todo{
+    padding: 10px 30px;
+}    
+.main_todo h1 {
+	font-size: 22px;
+}
+.main_todo .todo_head {
+	width: 260px;
+	height: 35px;
+}
+.main_todo .todo_head input {
+	width: 210px;
+	font-size: 15px;
+}
+.main_todo .todo_head button {
+	font-size: 15px;
+	width: 50px;
+}
+.single_todo input {
+	font-size: 16px;
+	width: 155px;
+}
+.single_todo button {
+	padding: 4px 7px;
+	font-size: 15px;
+}
+}
+                    /* ====  xl device responsive  ==== */
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+.main_todo{
+    padding: 20px 80px;
+}    
+.main_todo h1 {
+	font-size: 22px;
+}
+.main_todo .todo_head {
+	width: 300px;
+	height: 40px;
+}
+.main_todo .todo_head input {
+	width: 247px;
+	font-size: 15px;
+}
+.main_todo .todo_head button {
+	font-size: 15px;
+	width: 60px;
+}
+.single_todo {
+    width: 370px;
+	padding: 13px 5px;
+}
+.single_todo input {
+	font-size: 16px;
+	width: 250px;
+}
+.single_todo button {
+	padding: 4px 7px;
+	font-size: 15px;
+}
+}
+                    /* ====  xxl device responsive  ==== */
+     @media (min-width: 1400px) {
+.main_todo{
+    padding: 20px 80px;
+}    
+.main_todo h1 {
+	font-size: 22px;
+}
+.main_todo .todo_head {
+	width: 350px;
+	height: 45px;
+}
+.main_todo .todo_head input {
+	width: 280px;
+	font-size: 15px;
+}
+.main_todo .todo_head button {
+	font-size: 15px;
+	width: 67px;
+}
+.single_todo {
+    width: 400px;
+	padding: 13px 5px;
+}
+.single_todo input {
+	font-size: 16px;
+	width: 285px;
+}
+.single_todo button {
+	padding: 4px 7px;
+	font-size: 15px;
+}
+     }
+    </style>
+    
+</head>
+<body>
+    <div class="error"></div>
+    <div class="main_todo">
+        <h1>To-Do List</h1>
+        <div class="todo_head">
+            <input placeholder="Search for free input" onkeydown="addKey(event)" class="head_input" type="text">
+            <button onclick="add()" class="head_button">Add</button>
+        </div>
+    </div>
+    
+    <div class="todo_list">
+    </div>    
+    <script src="js/script.js"></script>
+</body>
+</html>

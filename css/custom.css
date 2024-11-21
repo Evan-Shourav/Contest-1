@@ -1,0 +1,177 @@
+/* ==========================  font link start  ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/* --------------------------  font link end  ------------------------ */
+/* ==========================  common css start  ===================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(../images/book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+/* --------------------------  common css end  ------------------------ */
+
+/* =====================  wellcome css start ========================== */
+.wellcomeSettime{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wellcomeHead h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Playwrite GB S", cursive;
+    text-shadow: 7px 5px 3px rgba(19,150,162,0.61);
+}
+.wellcomeImg img{
+    width: 500px;
+    height: 700;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.wellcome{
+    display: none;
+}
+/* --------------------------  wellcomr css end  ------------------------ */
+
+/* =====================  input & result css start ========================== */
+.userName{
+    display: none;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: "Oxanium", sans-serif;
+    margin-top: 50px;
+    text-shadow: 7px 5px 3px rgba(19,150,162,0.61);
+}
+.nameInput{
+    margin-top:  30px;
+    width:       450px;
+    height: 50px;
+    border:      1px solid #FFF100;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 33px 0px rgba(19,150,162,0.75);
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(19,150,162,0.75);
+    -moz-box-shadow: 0px 0px 33px 0px rgba(19,150,162,0.75);
+}
+.nameInput input{
+    width: 344px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Oxanium", sans-serif;
+}
+.nameInput ::placeholder{
+    font-size: 14px;
+    font-family: "Playwrite GB S", cursive;
+    color: #000000;
+    opacity: 50%;
+}
+.nameButton{
+    width: 70px;
+    height: 50px;
+    color: #fff;
+    background: rgba(19,150,162,0.61);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Playwrite GB S", cursive;
+}
+.nameButton:active{
+    transform: scale(.9);
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.result p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Playwrite GB S", cursive;
+    color: #000;
+    opacity: 50%;
+}
+.result h2{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: "Oxanium", sans-serif;
+    color: #000;
+    margin-top: 15px;
+}
+.resultUsing{
+    display: none;
+}
+/* --------------------------  input & result css end  --------------- */
+
+/* =====================  card css start ========================== */
+.allCard{
+    display: none;
+}
+.mainCard{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.singleCard{
+    width: 180px;
+    height: 170px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 0px 37px 6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 37px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 37px 6px rgba(0,0,0,0.75);
+}
+.singleCard h2{
+    font-size: 18px;
+    font-weight: 200;
+    background: #000;
+    font-family: "Oxanium", sans-serif;
+    text-align: center;
+    color: #fff;
+    width: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.singleCard img{
+    width: 180px;
+    height: 130px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* --------------------------  card css end  ------------------------ */
